@@ -1,7 +1,7 @@
 nthreads = 1
 ntables=1
 nscale=1
-runtime=1
+runtime=10
 
 sudo systemctl start mysql
 mysql -u root -ppassword -e "SELECT @@datadir;"
