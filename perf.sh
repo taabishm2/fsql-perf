@@ -17,8 +17,8 @@ sudo mv /var/lib/mysql /var/lib/mysql_bak
 
 # 1. Run on btrfs
 sudo systemctl stop mysql
-sed -i '22s/.*/datadir = \/mnt\/btrfs\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
-sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/btrfs\/mysql\/\,/' /etc/apparmor.d/tunables/alias
+sudo sed -i '22s/.*/datadir = \/mnt\/btrfs\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/btrfs\/mysql\/\,/' /etc/apparmor.d/tunables/alias
 sudo systemctl restart apparmor
 sudo systemctl start mysql
 
@@ -37,8 +37,8 @@ mysql -u root -ppassword -e "SELECT @@datadir;"
 
 # 2. Run on ext4
 sudo systemctl stop mysql
-sed -i '22s/.*/datadir = \/mnt\/ext4\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
-sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/ext4\/mysql\/\,/' /etc/apparmor.d/tunables/alias
+sudo sed -i '22s/.*/datadir = \/mnt\/ext4\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/ext4\/mysql\/\,/' /etc/apparmor.d/tunables/alias
 sudo systemctl restart apparmor
 sudo systemctl start mysql
 
@@ -57,8 +57,8 @@ mysql -u root -ppassword -e "SELECT @@datadir;"
 
 # 3. Run on zfs
 sudo systemctl stop mysql
-sed -i '22s/.*/datadir = \/mnt\/zfs\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
-sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/zfs\/mysql\/\,/' /etc/apparmor.d/tunables/alias
+sudo sed -i '22s/.*/datadir = \/mnt\/zfs\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/zfs\/mysql\/\,/' /etc/apparmor.d/tunables/alias
 sudo systemctl restart apparmor
 sudo systemctl start mysql
 
@@ -77,8 +77,8 @@ mysql -u root -ppassword -e "SELECT @@datadir;"
 
 # 4. Run on xfs
 sudo systemctl stop mysql
-sed -i '22s/.*/datadir = \/mnt\/xfs\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
-sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/xfs\/mysql\/\,/' /etc/apparmor.d/tunables/alias
+sudo sed -i '22s/.*/datadir = \/mnt\/xfs\/mysql/' /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo sed -i '16s/.*/alias \/var\/lib\/mysql\/ -> \/mnt\/xfs\/mysql\/\,/' /etc/apparmor.d/tunables/alias
 sudo systemctl restart apparmor
 sudo systemctl start mysql
 
