@@ -1,4 +1,4 @@
-nthreads = 1
+nthreads=1
 ntables=1
 nscale=1
 runtime=10
