@@ -1,0 +1,327 @@
+nohup: ignoring input
+Creating ./logs/th-1-tb-4-sc-4-tm-100
+mysql: [Warning] Using a password on the command line interface can be insecure.
+@@datadir
+/mnt/zfs/mysql/
+sending incremental file list
+rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+
+sent 18 bytes  received 12 bytes  60.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+sending incremental file list
+rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+
+sent 18 bytes  received 12 bytes  60.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+sending incremental file list
+rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+
+sent 18 bytes  received 12 bytes  60.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+sending incremental file list
+rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+
+sent 18 bytes  received 12 bytes  60.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+mv: cannot stat '/var/lib/mysql': No such file or directory
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Creating tables: 1
+
+Adding indexes 1 ... 
+
+Adding FK 1 ... 
+
+Creating tables: 2
+
+Adding indexes 2 ... 
+
+Adding FK 2 ... 
+
+Creating tables: 3
+
+Adding indexes 3 ... 
+
+Adding FK 3 ... 
+
+Creating tables: 4
+
+Adding indexes 4 ... 
+
+Adding FK 4 ... 
+
+Waiting on tables 30 sec
+
+loading tables: 1 for warehouse: 1
+
+loading tables: 2 for warehouse: 1
+
+loading tables: 3 for warehouse: 1
+
+loading tables: 4 for warehouse: 1
+
+loading tables: 1 for warehouse: 2
+
+loading tables: 2 for warehouse: 2
+
+loading tables: 3 for warehouse: 2
+
+loading tables: 4 for warehouse: 2
+
+loading tables: 1 for warehouse: 3
+
+loading tables: 2 for warehouse: 3
+
+loading tables: 3 for warehouse: 3
+
+loading tables: 4 for warehouse: 3
+
+loading tables: 1 for warehouse: 4
+
+loading tables: 2 for warehouse: 4
+
+loading tables: 3 for warehouse: 4
+
+loading tables: 4 for warehouse: 4
+
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Dropping tables '1'...
+Dropping tables '2'...
+Dropping tables '3'...
+Dropping tables '4'...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+@@datadir
+/mnt/btrfs/mysql/
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Creating tables: 1
+
+Adding indexes 1 ... 
+
+Adding FK 1 ... 
+
+Creating tables: 2
+
+Adding indexes 2 ... 
+
+Adding FK 2 ... 
+
+Creating tables: 3
+
+Adding indexes 3 ... 
+
+Adding FK 3 ... 
+
+Creating tables: 4
+
+Adding indexes 4 ... 
+
+Adding FK 4 ... 
+
+Waiting on tables 30 sec
+
+loading tables: 1 for warehouse: 1
+
+loading tables: 2 for warehouse: 1
+
+loading tables: 3 for warehouse: 1
+
+loading tables: 4 for warehouse: 1
+
+loading tables: 1 for warehouse: 2
+
+loading tables: 2 for warehouse: 2
+
+loading tables: 3 for warehouse: 2
+
+loading tables: 4 for warehouse: 2
+
+loading tables: 1 for warehouse: 3
+
+loading tables: 2 for warehouse: 3
+
+loading tables: 3 for warehouse: 3
+
+loading tables: 4 for warehouse: 3
+
+loading tables: 1 for warehouse: 4
+
+loading tables: 2 for warehouse: 4
+
+loading tables: 3 for warehouse: 4
+
+loading tables: 4 for warehouse: 4
+
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Dropping tables '1'...
+Dropping tables '2'...
+Dropping tables '3'...
+Dropping tables '4'...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+@@datadir
+/mnt/ext4/mysql/
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Creating tables: 1
+
+Adding indexes 1 ... 
+
+Adding FK 1 ... 
+
+Creating tables: 2
+
+Adding indexes 2 ... 
+
+Adding FK 2 ... 
+
+Creating tables: 3
+
+Adding indexes 3 ... 
+
+Adding FK 3 ... 
+
+Creating tables: 4
+
+Adding indexes 4 ... 
+
+Adding FK 4 ... 
+
+Waiting on tables 30 sec
+
+loading tables: 1 for warehouse: 1
+
+loading tables: 2 for warehouse: 1
+
+loading tables: 3 for warehouse: 1
+
+loading tables: 4 for warehouse: 1
+
+loading tables: 1 for warehouse: 2
+
+loading tables: 2 for warehouse: 2
+
+loading tables: 3 for warehouse: 2
+
+loading tables: 4 for warehouse: 2
+
+loading tables: 1 for warehouse: 3
+
+loading tables: 2 for warehouse: 3
+
+loading tables: 3 for warehouse: 3
+
+loading tables: 4 for warehouse: 3
+
+loading tables: 1 for warehouse: 4
+
+loading tables: 2 for warehouse: 4
+
+loading tables: 3 for warehouse: 4
+
+loading tables: 4 for warehouse: 4
+
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Dropping tables '1'...
+Dropping tables '2'...
+Dropping tables '3'...
+Dropping tables '4'...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+@@datadir
+/mnt/zfs/mysql/
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Creating tables: 1
+
+Adding indexes 1 ... 
+
+Adding FK 1 ... 
+
+Creating tables: 2
+
+Adding indexes 2 ... 
+
+Adding FK 2 ... 
+
+Creating tables: 3
+
+Adding indexes 3 ... 
+
+Adding FK 3 ... 
+
+Creating tables: 4
+
+Adding indexes 4 ... 
+
+Adding FK 4 ... 
+
+Waiting on tables 30 sec
+
+loading tables: 1 for warehouse: 1
+
+loading tables: 2 for warehouse: 1
+
+loading tables: 3 for warehouse: 1
+
+loading tables: 4 for warehouse: 1
+
+loading tables: 1 for warehouse: 2
+
+loading tables: 2 for warehouse: 2
+
+loading tables: 3 for warehouse: 2
+
+loading tables: 4 for warehouse: 2
+
+loading tables: 1 for warehouse: 3
+
+loading tables: 2 for warehouse: 3
+
+loading tables: 3 for warehouse: 3
+
+loading tables: 4 for warehouse: 3
+
+loading tables: 1 for warehouse: 4
+
+loading tables: 2 for warehouse: 4
+
+loading tables: 3 for warehouse: 4
+
+loading tables: 4 for warehouse: 4
+
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Dropping tables '1'...
+Dropping tables '2'...
+Dropping tables '3'...
+Dropping tables '4'...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+@@datadir
+/mnt/xfs/mysql/
+Script finished
