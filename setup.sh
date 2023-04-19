@@ -41,4 +41,13 @@ mysql_secure_installation
 
 df -T | tail -4
 
-echo "Finished setup!"
+wget https://repo.percona.com/apt/percona-release_latest.$(lsb_release -sc)_all.deb
+sudo dpkg -i percona-release_latest.$(lsb_release -sc)_all.deb
+sudo apt-get update
+sudo apt-get install pmm2-client
+
+mysql -u root -ppassword -e "CREATE USER 'pmm'@'localhost' IDENTIFIED BY 'pass' WITH MAX_USER_CONNECTIONS 10;"
+mysql -u root -ppassword -e "GRANT SELECT, PROCESS, SUPER, REPLICATION CLIENT, RELOAD ON *.* TO 'pmm'@'localhost';"
+sudo pmm-admin add mysql --username=pmm --password=pass --query-source=perfschema
+
+echo "Start PMM client with `sudo pmm-admin config --server-insecure-tls --server-url=https://admin:admin@<SERVER_IP>`"
