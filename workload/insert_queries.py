@@ -48,7 +48,7 @@ class InsertQueries:
             my_datetime += datetime.timedelta(seconds=1)
             # Define the SQL query to insert the row into the database
             self.queries.append(
-                f"INSERT INTO Orders (ID, cust_id, price, type, time, description) VALUES ({id}, {cust_id}, {price}, \"{type}\", \"{description}\", \"{my_datetime}\");")
+                f"INSERT INTO Orders (ID, cust_id, price, type, description, time) VALUES ({id}, {cust_id}, {price}, \"{type}\", \"{description}\", \"{my_datetime}\");")
 
     def generate_queries_file(self, file_name):
 
