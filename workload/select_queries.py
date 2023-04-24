@@ -40,7 +40,7 @@ class SelectQueries:
             "SELECT cust_id, type, SUM(price) as total_price FROM Orders GROUP BY cust_id, type HAVING total_price > 1000 ORDER BY total_price DESC;"
 
             # Get the name of each customer along with the total number of orders they have made
-            "SELECT c.Name, COUNT(o.ID) as num_orders FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;",
+            "SELECT c.ID, COUNT(o.ID) as num_orders FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;",
             
             # Get the name of each customer along with the total price of all their orders
             "SELECT c.Name, SUM(o.price) as total_price FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;",
@@ -49,7 +49,7 @@ class SelectQueries:
             "SELECT o.type, c.Name FROM Customer c JOIN Orders o ON c.ID = o.cust_id;",
             
             # Get the name of each customer along with the number of orders they have made and the total price of all their orders
-            "SELECT c.Name, COUNT(o.ID) as num_orders, SUM(o.price) as total_price FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;"
+            "SELECT c.ID, COUNT(o.ID) as num_orders, SUM(o.price) as total_price FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;"
 
             # Get the description of each order along with the type and price
             "SELECT type, price, description FROM Orders;",
