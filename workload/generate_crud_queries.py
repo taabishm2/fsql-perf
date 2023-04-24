@@ -31,12 +31,14 @@ def main():
     parser.add_argument('--R', dest='R', help='C help')
     parser.add_argument('--U', dest='U', help='C help')
     parser.add_argument('--D', dest='D', help='C help')
+    parser.add_argument('--N', dest='N', help='C help')
     args = parser.parse_args()
 
     queries = int(args.queries)
     C = int(args.C)
     U = int(args.U)
     D = int(args.D)
+    N = int(args.N)
 
     # Number of CRUD queries based on percentages
     num_create = floor(C * 0.01 * queries)
@@ -55,6 +57,19 @@ def main():
     # print(f"R: {args.R}")
     # print(f"U: {args.U}")
     # print(f"D: {args.D}")
+
+    create_f = open("insert_queries.sql").read()
+    select_f = open("select_queries.sql").read()
+    # update_f = open("").read()
+    delete_f = open("delete_queries.sql").read()
+
+    with open("run.sql", "w") as f:
+        for i in range(int(N)):
+            f.write(create_f)
+            f.write(select_f)
+            # f.write(update_f)
+            f.write(delete_f)
+    print("Generated run.sql")
 
 
 if __name__ == "__main__":

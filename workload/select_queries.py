@@ -76,7 +76,7 @@ class SelectQueries:
                 # Write each query to the file with a semicolon and newline
                 for query in queries:
                     f.write(query + "\n")
-                    f.write(";\n")
+                    #f.write(";\n")
 
 
 def main():
