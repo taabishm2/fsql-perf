@@ -48,6 +48,11 @@ sudo apt-get install pmm2-client
 
 mysql -u root -ppassword -e "CREATE USER 'pmm'@'localhost' IDENTIFIED BY 'pass' WITH MAX_USER_CONNECTIONS 10;"
 mysql -u root -ppassword -e "GRANT SELECT, PROCESS, SUPER, REPLICATION CLIENT, RELOAD ON *.* TO 'pmm'@'localhost';"
-sudo pmm-admin add mysql --username=pmm --password=pass --query-source=perfschema
 
-echo "Start PMM client with `sudo pmm-admin config --server-insecure-tls --server-url=https://admin:admin@<SERVER_IP>`"
+mysql -u root -ppassword -e "DROP SCHEMA IF EXISTS benchmarks;"
+mysql -u root -ppassword -e "CREATE SCHEMA benchmarks;"
+mysql -u root -ppassword -e "CREATE TABLE benchmarks.Customer (ID int, Name varchar(200));"
+mysql -u root -ppassword -e "CREATE TABLE benchmarks.Orders (ID int, cust_id int, price float, type varchar(100), time DATETIME, description MEDIUMTEXT);"
+
+echo "Start PMM client with sudo pmm-admin config --server-insecure-tls --server-url=https://admin:admin@<SERVER_IP>"
+echo "Then run sudo pmm-admin add mysql --username=pmm --password=pass --query-source=perfschema"
