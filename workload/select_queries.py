@@ -43,7 +43,7 @@ class SelectQueries:
             "SELECT c.ID, COUNT(o.ID) as num_orders FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;",
             
             # Get the name of each customer along with the total price of all their orders
-            "SELECT c.Name, SUM(o.price) as total_price FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.ID;",
+            "SELECT c.Name, SUM(o.price) as total_price FROM Customer c JOIN Orders o ON c.ID = o.cust_id GROUP BY c.Name;",
             
             # Get the type of each order along with the name of the customer who made it
             "SELECT o.type, c.Name FROM Customer c JOIN Orders o ON c.ID = o.cust_id;",
