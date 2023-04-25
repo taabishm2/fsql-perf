@@ -2,7 +2,7 @@
 
 # Set the database name and new storage engine
 database_name="database_name"
-engine_name="InnoDB"
+engine_name="MyISAM"
 
 # Change the storage engine for the database
 mysql -u root -p password -e "ALTER DATABASE ${database_name} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
