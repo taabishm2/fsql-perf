@@ -3,6 +3,7 @@ from math import floor
 from insert_queries import InsertQueries
 from select_queries import SelectQueries
 from delete_queries import DeleteQueries
+from update_queries import UpdateQueries
 
 def generate_create_queries(num_create):
     iq = InsertQueries()
@@ -17,7 +18,8 @@ def generate_read_queries(num_read):
     sq.generate_queries_file("select_queries.sql", num_read)
 
 def generate_update_queries(num_update):
-    pass
+    uq = UpdateQueries()
+    uq.generate_queries_file("update_queries.sql", num_update)
 
 def generate_delete_queries(num_delete):
     dq = DeleteQueries()
