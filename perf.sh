@@ -39,9 +39,15 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
 
+    start_time=$(date +%s.%N)
+
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/btrfs-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
+    
+    end_time=$(date +%s.%N)
+
+    echo "btrfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 
     mysql -u root -ppassword -e "SELECT @@datadir;"
@@ -62,9 +68,15 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
 
+    start_time=$(date +%s.%N)
+
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/ext4-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
+    
+    end_time=$(date +%s.%N)
+
+    echo "ext4,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 
     mysql -u root -ppassword -e "SELECT @@datadir;"
@@ -85,9 +97,15 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
 
+    start_time=$(date +%s.%N)
+
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/zfs-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
+    
+    end_time=$(date +%s.%N)
+
+    echo "zfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 
     mysql -u root -ppassword -e "SELECT @@datadir;"
@@ -107,10 +125,16 @@ for engine in "${engines[@]}"; do
 
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
+
+    start_time=$(date +%s.%N)
     
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/xfs-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
+    
+    end_time=$(date +%s.%N)
+
+    echo "xfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 done
 
