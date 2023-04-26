@@ -1,7 +1,7 @@
 nthreads=1
 ntables=2
-nscale=1
-runtime=10
+nscale=2
+runtime=30
 
 logdir="./logs/th-$nthreads-tb-$ntables-sc-$nscale-tm-$runtime"
 echo "Creating $logdir"

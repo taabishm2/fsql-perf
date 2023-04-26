@@ -1,0 +1,5 @@
+Filesystem,DB Engine,Read Queries,Write Queries,Other Queries,Total Queries,Transactions/sec,Queries/sec,Min Latency (ms),Avg Latency (ms),Max Latency (ms),95th percentile (ms)
+ext4,innodb,53173,55362,8095,116630,40.45,1166.00,1.16,24.72,240.08,70.55
+btrfs,innodb,13852,14432,2115,30399,10.56,303.86,1.36,94.73,8578.47,193.38
+xfs,innodb,43206,44679,6685,94570,33.40,945.54,1.23,29.93,491.88,116.80
+zfs,innodb,34304,35519,5321,75144,26.59,751.41,1.44,37.60,364.77,137.35
