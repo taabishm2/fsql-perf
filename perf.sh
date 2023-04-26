@@ -1,6 +1,6 @@
 nthreads=1
 ntables=2
-nscale=2
+nscale=1
 runtime=10
 
 logdir="./logs/th-$nthreads-tb-$ntables-sc-$nscale-tm-$runtime"
