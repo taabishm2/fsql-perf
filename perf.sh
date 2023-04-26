@@ -47,7 +47,7 @@ for engine in "${engines[@]}"; do
     
     end_time=$(date +%s.%N)
 
-    echo "btrfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
+    echo "btrfs,${engine},${start_time},${end_time}" > FS_engine_timestamp.csv
     # End test run
 
     mysql -u root -ppassword -e "SELECT @@datadir;"
