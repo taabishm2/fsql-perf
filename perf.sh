@@ -39,7 +39,7 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
 
-    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/btrfs.log"
+    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/btrfs-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
     # End test run
@@ -62,7 +62,7 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
 
-    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/ext4.log"
+    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/ext4-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
     # End test run
@@ -85,7 +85,7 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
 
-    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/zfs.log"
+    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/zfs-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
     # End test run
@@ -108,7 +108,7 @@ for engine in "${engines[@]}"; do
     chmod +x ./change_engine.sh
     ./change_engine.sh sbtest $engine
     
-    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/xfs.log"
+    sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/xfs-${engine}.log"
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' cleanup
     # End test run

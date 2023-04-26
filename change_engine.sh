@@ -10,12 +10,28 @@ mysql -u root -ppassword -e "USE ${database_name};"
 
 # Generate a list of SQL statements to change the storage engine for each table
 tables=$(mysql -u root -ppassword -Nse "SHOW TABLES" ${database_name})
-for table in $tables; do
-  if [ "$engine_name" = "ARCHIVE" ]; then
+if [ "$engine_name" != "InnoDB" ]; then
+  for table in $tables; do
+    FOREIGN_KEYS=$(mysql -u root -ppassword -Nse "USE ${database_name}; SELECT constraint_name FROM information_schema.table_constraints WHERE table_schema = '${database_name}' AND table_name = '${table}' AND constraint_type = 'FOREIGN KEY';")
+    for FOREIGN_KEY in $FOREIGN_KEYS
+    do
+      mysql -u root -ppassword -e "USE ${database_name}; ALTER TABLE ${table} DROP FOREIGN KEY $FOREIGN_KEY;"
+    done
+  done
+fi  
+if [ "$engine_name" = "ARCHIVE" ]; then
+  for table in $tables; do
     sql_statement="ALTER TABLE ${table} DROP PRIMARY KEY;"
     echo "Dropping PK for ARCHIVE engine for table ${table}..."
-    mysql -u root -ppassword -e "${sql_statement}" ${database_name}  
-  fi
+    mysql -u root -ppassword -e "${sql_statement}" ${database_name} 
+  done
+  INDEXES=$(mysql -u root -ppassword -Nse "SELECT INDEX_NAME FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = '${database_name}' AND TABLE_NAME = '${table}'")
+  for INDEX in $INDEXES
+  do
+    mysql -u root -ppassword -e "ALTER TABLE ${database_name}.${table} DROP INDEX $INDEX"
+  done   
+fi
+for table in $tables; do
   sql_statement="ALTER TABLE ${table} ENGINE='${engine_name}';"
   echo "Changing engine for table ${table}..."
   mysql -u root -ppassword -e "${sql_statement}" ${database_name}
