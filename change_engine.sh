@@ -21,11 +21,13 @@ if [ "$engine_name" != "InnoDB" ]; then
   done
 fi  
 if [ "$engine_name" = "ARCHIVE" ]; then
-  INDEXES=$(mysql -u root -ppassword -Nse "SELECT INDEX_NAME FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = '${database_name}' AND TABLE_NAME = '${table}'")
-  for INDEX in $INDEXES
-  do
-    echo "Dropping INDEX for ${engine_name} engine for table ${table}..."
-    mysql -u root -ppassword -e "ALTER TABLE ${database_name}.${table} DROP INDEX $INDEX"
+  for table in $tables; do
+    INDEXES=$(mysql -u root -ppassword -Nse "SELECT INDEX_NAME FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = '${database_name}' AND TABLE_NAME = '${table}'")
+    for INDEX in $INDEXES
+    do
+      echo "Dropping INDEX for ${engine_name} engine for table ${table}..."
+      mysql -u root -ppassword -e "ALTER TABLE ${database_name}.${table} DROP INDEX $INDEX"
+    done
   done
   for table in $tables; do
     sql_statement="ALTER TABLE ${table} DROP PRIMARY KEY;"
