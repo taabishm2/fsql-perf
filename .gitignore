@@ -1,1 +1,3 @@
 workload/*.sql
+.DS_Store
+logs/.DS_Store
