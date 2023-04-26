@@ -38,8 +38,10 @@ for engine in "${engines[@]}"; do
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' prepare
 
-    chmod +x ./change_engine.sh
-    ./change_engine.sh sbtest $engine
+    if [ "$engine" != "InnoDB" ]; then
+        chmod +x ./change_engine.sh
+        ./change_engine.sh sbtest $engine
+    fi
 
     start_time=$(date +%s.%N)
 
@@ -67,8 +69,10 @@ for engine in "${engines[@]}"; do
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' prepare
 
-    chmod +x ./change_engine.sh
-    ./change_engine.sh sbtest $engine
+    if [ "$engine" != "InnoDB" ]; then
+        chmod +x ./change_engine.sh
+        ./change_engine.sh sbtest $engine
+    fi
 
     start_time=$(date +%s.%N)
 
@@ -96,8 +100,10 @@ for engine in "${engines[@]}"; do
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' prepare
 
-    chmod +x ./change_engine.sh
-    ./change_engine.sh sbtest $engine
+    if [ "$engine" != "InnoDB" ]; then
+        chmod +x ./change_engine.sh
+        ./change_engine.sh sbtest $engine
+    fi
 
     start_time=$(date +%s.%N)
 
@@ -125,8 +131,10 @@ for engine in "${engines[@]}"; do
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' prepare
 
-    chmod +x ./change_engine.sh
-    ./change_engine.sh sbtest $engine
+    if [ "$engine" != "InnoDB" ]; then
+        chmod +x ./change_engine.sh
+        ./change_engine.sh sbtest $engine
+    fi
 
     start_time=$(date +%s.%N)
     
