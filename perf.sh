@@ -20,7 +20,7 @@ sudo rsync -av /var/lib/mysql /mnt/xfs
 
 sudo mv /var/lib/mysql /var/lib/mysql_bak
 
-engines=(InnoDB MyISAM ARCHIVE)
+engines=(CSV)
 
 rm -rf FS_engine_timestamp.csv
 

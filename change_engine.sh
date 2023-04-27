@@ -20,7 +20,7 @@ if [ "$engine_name" != "InnoDB" ]; then
     done
   done
 fi  
-if [ "$engine_name" = "ARCHIVE" ]; then
+if [ "$engine_name" = "CSV" ]; then
   for table in $tables; do
     sql_statement="ALTER TABLE ${table} DROP PRIMARY KEY;"
     echo "Dropping PK for ${engine_name} engine for table ${table}..."
@@ -36,6 +36,10 @@ if [ "$engine_name" = "ARCHIVE" ]; then
   done   
 fi
 for table in $tables; do
+  if [ "$engine_name" == "CSV" ]; then
+	chmod +x csv.sh
+	./csv.sh
+  fi
   sql_statement="ALTER TABLE ${table} ENGINE='${engine_name}';"
   echo "Changing engine for table ${table}..."
   mysql -u root -ppassword -e "${sql_statement}" ${database_name}
