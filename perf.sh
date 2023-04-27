@@ -1,7 +1,7 @@
 nthreads=1
-ntables=2
-nscale=2
-runtime=30
+ntables=4
+nscale=4
+runtime=300
 
 logdir="./logs/th-$nthreads-tb-$ntables-sc-$nscale-tm-$runtime"
 echo "Creating $logdir"
@@ -20,7 +20,7 @@ sudo rsync -av /var/lib/mysql /mnt/xfs
 
 sudo mv /var/lib/mysql /var/lib/mysql_bak
 
-engines=(CSV)
+engines=(InnoDB MyISAM CSV)
 
 rm -rf FS_engine_timestamp.csv
 
@@ -43,6 +43,7 @@ for engine in "${engines[@]}"; do
         ./change_engine.sh sbtest $engine
     fi
 
+    sleep 60
     start_time=$(date +%s.%N)
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/btrfs-${engine}.log"
@@ -51,6 +52,7 @@ for engine in "${engines[@]}"; do
     
     end_time=$(date +%s.%N)
 
+    sleep 60
     echo "btrfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 
@@ -74,6 +76,7 @@ for engine in "${engines[@]}"; do
         ./change_engine.sh sbtest $engine
     fi
 
+    sleep 60
     start_time=$(date +%s.%N)
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/ext4-${engine}.log"
@@ -82,6 +85,7 @@ for engine in "${engines[@]}"; do
     
     end_time=$(date +%s.%N)
 
+    sleep 60
     echo "ext4,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 
@@ -105,6 +109,7 @@ for engine in "${engines[@]}"; do
         ./change_engine.sh sbtest $engine
     fi
 
+    sleep 60
     start_time=$(date +%s.%N)
 
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/zfs-${engine}.log"
@@ -113,6 +118,7 @@ for engine in "${engines[@]}"; do
     
     end_time=$(date +%s.%N)
 
+    sleep 60
     echo "zfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 
@@ -136,6 +142,7 @@ for engine in "${engines[@]}"; do
         ./change_engine.sh sbtest $engine
     fi
 
+    sleep 60
     start_time=$(date +%s.%N)
     
     sysbench --test=/usr/share/sysbench/tpcc.lua --threads=$nthreads --tables=$ntables --scale=$nscale --time=$runtime --db-driver=mysql --mysql-db=sbtest --mysql-user=root --mysql-password='password' run > "$logdir/xfs-${engine}.log"
@@ -144,6 +151,7 @@ for engine in "${engines[@]}"; do
     
     end_time=$(date +%s.%N)
 
+    sleep 60
     echo "xfs,${engine},${start_time},${end_time}" >> FS_engine_timestamp.csv
     # End test run
 done

@@ -1,33 +1,740 @@
 nohup: ignoring input
-Creating ./logs/th-1-tb-4-sc-4-tm-100
+Creating ./logs/th-1-tb-4-sc-4-tm-300
 mysql: [Warning] Using a password on the command line interface can be insecure.
 @@datadir
-/mnt/zfs/mysql/
+/var/lib/mysql/
 sending incremental file list
-rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+mysql/
+mysql/#ib_16384_0.dblwr
+mysql/#ib_16384_1.dblwr
+mysql/auto.cnf
+mysql/binlog.000001
+mysql/binlog.000002
+mysql/binlog.000003
+mysql/binlog.index
+mysql/ca-key.pem
+mysql/ca.pem
+mysql/client-cert.pem
+mysql/client-key.pem
+mysql/debian-5.7.flag
+mysql/ib_buffer_pool
+mysql/ibdata1
+mysql/mysql.ibd
+mysql/private_key.pem
+mysql/public_key.pem
+mysql/server-cert.pem
+mysql/server-key.pem
+mysql/undo_001
+mysql/undo_002
+mysql/#innodb_redo/
+mysql/#innodb_redo/#ib_redo10_tmp
+mysql/#innodb_redo/#ib_redo11_tmp
+mysql/#innodb_redo/#ib_redo12_tmp
+mysql/#innodb_redo/#ib_redo13_tmp
+mysql/#innodb_redo/#ib_redo14_tmp
+mysql/#innodb_redo/#ib_redo15_tmp
+mysql/#innodb_redo/#ib_redo16_tmp
+mysql/#innodb_redo/#ib_redo17_tmp
+mysql/#innodb_redo/#ib_redo18_tmp
+mysql/#innodb_redo/#ib_redo19_tmp
+mysql/#innodb_redo/#ib_redo20_tmp
+mysql/#innodb_redo/#ib_redo21_tmp
+mysql/#innodb_redo/#ib_redo22_tmp
+mysql/#innodb_redo/#ib_redo23_tmp
+mysql/#innodb_redo/#ib_redo24_tmp
+mysql/#innodb_redo/#ib_redo25_tmp
+mysql/#innodb_redo/#ib_redo26_tmp
+mysql/#innodb_redo/#ib_redo27_tmp
+mysql/#innodb_redo/#ib_redo28_tmp
+mysql/#innodb_redo/#ib_redo29_tmp
+mysql/#innodb_redo/#ib_redo30_tmp
+mysql/#innodb_redo/#ib_redo31_tmp
+mysql/#innodb_redo/#ib_redo32_tmp
+mysql/#innodb_redo/#ib_redo33_tmp
+mysql/#innodb_redo/#ib_redo34_tmp
+mysql/#innodb_redo/#ib_redo35_tmp
+mysql/#innodb_redo/#ib_redo36_tmp
+mysql/#innodb_redo/#ib_redo5
+mysql/#innodb_redo/#ib_redo6_tmp
+mysql/#innodb_redo/#ib_redo7_tmp
+mysql/#innodb_redo/#ib_redo8_tmp
+mysql/#innodb_redo/#ib_redo9_tmp
+mysql/#innodb_temp/
+mysql/benchmarks/
+mysql/benchmarks/Customer.ibd
+mysql/benchmarks/Orders.ibd
+mysql/mysql/
+mysql/mysql/general_log.CSM
+mysql/mysql/general_log.CSV
+mysql/mysql/general_log_213.sdi
+mysql/mysql/slow_log.CSM
+mysql/mysql/slow_log.CSV
+mysql/mysql/slow_log_214.sdi
+mysql/performance_schema/
+mysql/performance_schema/accounts_145.sdi
+mysql/performance_schema/binary_log_trans_189.sdi
+mysql/performance_schema/cond_instances_82.sdi
+mysql/performance_schema/data_lock_waits_161.sdi
+mysql/performance_schema/data_locks_160.sdi
+mysql/performance_schema/error_log_83.sdi
+mysql/performance_schema/events_errors_su_139.sdi
+mysql/performance_schema/events_errors_su_140.sdi
+mysql/performance_schema/events_errors_su_141.sdi
+mysql/performance_schema/events_errors_su_142.sdi
+mysql/performance_schema/events_errors_su_143.sdi
+mysql/performance_schema/events_stages_cu_111.sdi
+mysql/performance_schema/events_stages_hi_112.sdi
+mysql/performance_schema/events_stages_hi_113.sdi
+mysql/performance_schema/events_stages_su_114.sdi
+mysql/performance_schema/events_stages_su_115.sdi
+mysql/performance_schema/events_stages_su_116.sdi
+mysql/performance_schema/events_stages_su_117.sdi
+mysql/performance_schema/events_stages_su_118.sdi
+mysql/performance_schema/events_statement_119.sdi
+mysql/performance_schema/events_statement_120.sdi
+mysql/performance_schema/events_statement_121.sdi
+mysql/performance_schema/events_statement_122.sdi
+mysql/performance_schema/events_statement_123.sdi
+mysql/performance_schema/events_statement_124.sdi
+mysql/performance_schema/events_statement_125.sdi
+mysql/performance_schema/events_statement_126.sdi
+mysql/performance_schema/events_statement_127.sdi
+mysql/performance_schema/events_statement_128.sdi
+mysql/performance_schema/events_statement_129.sdi
+mysql/performance_schema/events_statement_130.sdi
+mysql/performance_schema/events_transacti_131.sdi
+mysql/performance_schema/events_transacti_132.sdi
+mysql/performance_schema/events_transacti_133.sdi
+mysql/performance_schema/events_transacti_134.sdi
+mysql/performance_schema/events_transacti_135.sdi
+mysql/performance_schema/events_transacti_136.sdi
+mysql/performance_schema/events_transacti_137.sdi
+mysql/performance_schema/events_transacti_138.sdi
+mysql/performance_schema/events_waits_cur_84.sdi
+mysql/performance_schema/events_waits_his_85.sdi
+mysql/performance_schema/events_waits_his_86.sdi
+mysql/performance_schema/events_waits_sum_87.sdi
+mysql/performance_schema/events_waits_sum_88.sdi
+mysql/performance_schema/events_waits_sum_89.sdi
+mysql/performance_schema/events_waits_sum_90.sdi
+mysql/performance_schema/events_waits_sum_91.sdi
+mysql/performance_schema/events_waits_sum_92.sdi
+mysql/performance_schema/file_instances_93.sdi
+mysql/performance_schema/file_summary_by__94.sdi
+mysql/performance_schema/file_summary_by__95.sdi
+mysql/performance_schema/global_status_181.sdi
+mysql/performance_schema/global_variables_184.sdi
+mysql/performance_schema/host_cache_96.sdi
+mysql/performance_schema/hosts_146.sdi
+mysql/performance_schema/keyring_componen_191.sdi
+mysql/performance_schema/keyring_keys_152.sdi
+mysql/performance_schema/log_status_174.sdi
+mysql/performance_schema/memory_summary_b_154.sdi
+mysql/performance_schema/memory_summary_b_155.sdi
+mysql/performance_schema/memory_summary_b_156.sdi
+mysql/performance_schema/memory_summary_b_157.sdi
+mysql/performance_schema/memory_summary_g_153.sdi
+mysql/performance_schema/metadata_locks_159.sdi
+mysql/performance_schema/mutex_instances_97.sdi
+mysql/performance_schema/objects_summary__98.sdi
+mysql/performance_schema/performance_time_99.sdi
+mysql/performance_schema/persisted_variab_187.sdi
+mysql/performance_schema/prepared_stateme_175.sdi
+mysql/performance_schema/processlist_100.sdi
+mysql/performance_schema/replication_appl_165.sdi
+mysql/performance_schema/replication_appl_166.sdi
+mysql/performance_schema/replication_appl_167.sdi
+mysql/performance_schema/replication_appl_168.sdi
+mysql/performance_schema/replication_appl_170.sdi
+mysql/performance_schema/replication_appl_171.sdi
+mysql/performance_schema/replication_asyn_172.sdi
+mysql/performance_schema/replication_asyn_173.sdi
+mysql/performance_schema/replication_conn_162.sdi
+mysql/performance_schema/replication_conn_164.sdi
+mysql/performance_schema/replication_grou_163.sdi
+mysql/performance_schema/replication_grou_169.sdi
+mysql/performance_schema/rwlock_instances_101.sdi
+mysql/performance_schema/session_account__151.sdi
+mysql/performance_schema/session_connect__150.sdi
+mysql/performance_schema/session_status_182.sdi
+mysql/performance_schema/session_variable_185.sdi
+mysql/performance_schema/setup_actors_102.sdi
+mysql/performance_schema/setup_consumers_103.sdi
+mysql/performance_schema/setup_instrument_104.sdi
+mysql/performance_schema/setup_objects_105.sdi
+mysql/performance_schema/setup_threads_106.sdi
+mysql/performance_schema/socket_instances_147.sdi
+mysql/performance_schema/socket_summary_b_148.sdi
+mysql/performance_schema/socket_summary_b_149.sdi
+mysql/performance_schema/status_by_accoun_177.sdi
+mysql/performance_schema/status_by_host_178.sdi
+mysql/performance_schema/status_by_thread_179.sdi
+mysql/performance_schema/status_by_user_180.sdi
+mysql/performance_schema/table_handles_158.sdi
+mysql/performance_schema/table_io_waits_s_107.sdi
+mysql/performance_schema/table_io_waits_s_108.sdi
+mysql/performance_schema/table_lock_waits_109.sdi
+mysql/performance_schema/threads_110.sdi
+mysql/performance_schema/tls_channel_stat_190.sdi
+mysql/performance_schema/user_defined_fun_188.sdi
+mysql/performance_schema/user_variables_b_176.sdi
+mysql/performance_schema/users_144.sdi
+mysql/performance_schema/variables_by_thr_183.sdi
+mysql/performance_schema/variables_info_186.sdi
+mysql/sys/
+mysql/sys/sys_config.ibd
 
-sent 18 bytes  received 12 bytes  60.00 bytes/sec
-total size is 0  speedup is 0.00
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+sent 186,857,531 bytes  received 3,336 bytes  124,573,911.33 bytes/sec
+total size is 186,799,303  speedup is 1.00
 sending incremental file list
-rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+mysql/
+mysql/#ib_16384_0.dblwr
+mysql/#ib_16384_1.dblwr
+mysql/auto.cnf
+mysql/binlog.000001
+mysql/binlog.000002
+mysql/binlog.000003
+mysql/binlog.index
+mysql/ca-key.pem
+mysql/ca.pem
+mysql/client-cert.pem
+mysql/client-key.pem
+mysql/debian-5.7.flag
+mysql/ib_buffer_pool
+mysql/ibdata1
+mysql/mysql.ibd
+mysql/private_key.pem
+mysql/public_key.pem
+mysql/server-cert.pem
+mysql/server-key.pem
+mysql/undo_001
+mysql/undo_002
+mysql/#innodb_redo/
+mysql/#innodb_redo/#ib_redo10_tmp
+mysql/#innodb_redo/#ib_redo11_tmp
+mysql/#innodb_redo/#ib_redo12_tmp
+mysql/#innodb_redo/#ib_redo13_tmp
+mysql/#innodb_redo/#ib_redo14_tmp
+mysql/#innodb_redo/#ib_redo15_tmp
+mysql/#innodb_redo/#ib_redo16_tmp
+mysql/#innodb_redo/#ib_redo17_tmp
+mysql/#innodb_redo/#ib_redo18_tmp
+mysql/#innodb_redo/#ib_redo19_tmp
+mysql/#innodb_redo/#ib_redo20_tmp
+mysql/#innodb_redo/#ib_redo21_tmp
+mysql/#innodb_redo/#ib_redo22_tmp
+mysql/#innodb_redo/#ib_redo23_tmp
+mysql/#innodb_redo/#ib_redo24_tmp
+mysql/#innodb_redo/#ib_redo25_tmp
+mysql/#innodb_redo/#ib_redo26_tmp
+mysql/#innodb_redo/#ib_redo27_tmp
+mysql/#innodb_redo/#ib_redo28_tmp
+mysql/#innodb_redo/#ib_redo29_tmp
+mysql/#innodb_redo/#ib_redo30_tmp
+mysql/#innodb_redo/#ib_redo31_tmp
+mysql/#innodb_redo/#ib_redo32_tmp
+mysql/#innodb_redo/#ib_redo33_tmp
+mysql/#innodb_redo/#ib_redo34_tmp
+mysql/#innodb_redo/#ib_redo35_tmp
+mysql/#innodb_redo/#ib_redo36_tmp
+mysql/#innodb_redo/#ib_redo5
+mysql/#innodb_redo/#ib_redo6_tmp
+mysql/#innodb_redo/#ib_redo7_tmp
+mysql/#innodb_redo/#ib_redo8_tmp
+mysql/#innodb_redo/#ib_redo9_tmp
+mysql/#innodb_temp/
+mysql/benchmarks/
+mysql/benchmarks/Customer.ibd
+mysql/benchmarks/Orders.ibd
+mysql/mysql/
+mysql/mysql/general_log.CSM
+mysql/mysql/general_log.CSV
+mysql/mysql/general_log_213.sdi
+mysql/mysql/slow_log.CSM
+mysql/mysql/slow_log.CSV
+mysql/mysql/slow_log_214.sdi
+mysql/performance_schema/
+mysql/performance_schema/accounts_145.sdi
+mysql/performance_schema/binary_log_trans_189.sdi
+mysql/performance_schema/cond_instances_82.sdi
+mysql/performance_schema/data_lock_waits_161.sdi
+mysql/performance_schema/data_locks_160.sdi
+mysql/performance_schema/error_log_83.sdi
+mysql/performance_schema/events_errors_su_139.sdi
+mysql/performance_schema/events_errors_su_140.sdi
+mysql/performance_schema/events_errors_su_141.sdi
+mysql/performance_schema/events_errors_su_142.sdi
+mysql/performance_schema/events_errors_su_143.sdi
+mysql/performance_schema/events_stages_cu_111.sdi
+mysql/performance_schema/events_stages_hi_112.sdi
+mysql/performance_schema/events_stages_hi_113.sdi
+mysql/performance_schema/events_stages_su_114.sdi
+mysql/performance_schema/events_stages_su_115.sdi
+mysql/performance_schema/events_stages_su_116.sdi
+mysql/performance_schema/events_stages_su_117.sdi
+mysql/performance_schema/events_stages_su_118.sdi
+mysql/performance_schema/events_statement_119.sdi
+mysql/performance_schema/events_statement_120.sdi
+mysql/performance_schema/events_statement_121.sdi
+mysql/performance_schema/events_statement_122.sdi
+mysql/performance_schema/events_statement_123.sdi
+mysql/performance_schema/events_statement_124.sdi
+mysql/performance_schema/events_statement_125.sdi
+mysql/performance_schema/events_statement_126.sdi
+mysql/performance_schema/events_statement_127.sdi
+mysql/performance_schema/events_statement_128.sdi
+mysql/performance_schema/events_statement_129.sdi
+mysql/performance_schema/events_statement_130.sdi
+mysql/performance_schema/events_transacti_131.sdi
+mysql/performance_schema/events_transacti_132.sdi
+mysql/performance_schema/events_transacti_133.sdi
+mysql/performance_schema/events_transacti_134.sdi
+mysql/performance_schema/events_transacti_135.sdi
+mysql/performance_schema/events_transacti_136.sdi
+mysql/performance_schema/events_transacti_137.sdi
+mysql/performance_schema/events_transacti_138.sdi
+mysql/performance_schema/events_waits_cur_84.sdi
+mysql/performance_schema/events_waits_his_85.sdi
+mysql/performance_schema/events_waits_his_86.sdi
+mysql/performance_schema/events_waits_sum_87.sdi
+mysql/performance_schema/events_waits_sum_88.sdi
+mysql/performance_schema/events_waits_sum_89.sdi
+mysql/performance_schema/events_waits_sum_90.sdi
+mysql/performance_schema/events_waits_sum_91.sdi
+mysql/performance_schema/events_waits_sum_92.sdi
+mysql/performance_schema/file_instances_93.sdi
+mysql/performance_schema/file_summary_by__94.sdi
+mysql/performance_schema/file_summary_by__95.sdi
+mysql/performance_schema/global_status_181.sdi
+mysql/performance_schema/global_variables_184.sdi
+mysql/performance_schema/host_cache_96.sdi
+mysql/performance_schema/hosts_146.sdi
+mysql/performance_schema/keyring_componen_191.sdi
+mysql/performance_schema/keyring_keys_152.sdi
+mysql/performance_schema/log_status_174.sdi
+mysql/performance_schema/memory_summary_b_154.sdi
+mysql/performance_schema/memory_summary_b_155.sdi
+mysql/performance_schema/memory_summary_b_156.sdi
+mysql/performance_schema/memory_summary_b_157.sdi
+mysql/performance_schema/memory_summary_g_153.sdi
+mysql/performance_schema/metadata_locks_159.sdi
+mysql/performance_schema/mutex_instances_97.sdi
+mysql/performance_schema/objects_summary__98.sdi
+mysql/performance_schema/performance_time_99.sdi
+mysql/performance_schema/persisted_variab_187.sdi
+mysql/performance_schema/prepared_stateme_175.sdi
+mysql/performance_schema/processlist_100.sdi
+mysql/performance_schema/replication_appl_165.sdi
+mysql/performance_schema/replication_appl_166.sdi
+mysql/performance_schema/replication_appl_167.sdi
+mysql/performance_schema/replication_appl_168.sdi
+mysql/performance_schema/replication_appl_170.sdi
+mysql/performance_schema/replication_appl_171.sdi
+mysql/performance_schema/replication_asyn_172.sdi
+mysql/performance_schema/replication_asyn_173.sdi
+mysql/performance_schema/replication_conn_162.sdi
+mysql/performance_schema/replication_conn_164.sdi
+mysql/performance_schema/replication_grou_163.sdi
+mysql/performance_schema/replication_grou_169.sdi
+mysql/performance_schema/rwlock_instances_101.sdi
+mysql/performance_schema/session_account__151.sdi
+mysql/performance_schema/session_connect__150.sdi
+mysql/performance_schema/session_status_182.sdi
+mysql/performance_schema/session_variable_185.sdi
+mysql/performance_schema/setup_actors_102.sdi
+mysql/performance_schema/setup_consumers_103.sdi
+mysql/performance_schema/setup_instrument_104.sdi
+mysql/performance_schema/setup_objects_105.sdi
+mysql/performance_schema/setup_threads_106.sdi
+mysql/performance_schema/socket_instances_147.sdi
+mysql/performance_schema/socket_summary_b_148.sdi
+mysql/performance_schema/socket_summary_b_149.sdi
+mysql/performance_schema/status_by_accoun_177.sdi
+mysql/performance_schema/status_by_host_178.sdi
+mysql/performance_schema/status_by_thread_179.sdi
+mysql/performance_schema/status_by_user_180.sdi
+mysql/performance_schema/table_handles_158.sdi
+mysql/performance_schema/table_io_waits_s_107.sdi
+mysql/performance_schema/table_io_waits_s_108.sdi
+mysql/performance_schema/table_lock_waits_109.sdi
+mysql/performance_schema/threads_110.sdi
+mysql/performance_schema/tls_channel_stat_190.sdi
+mysql/performance_schema/user_defined_fun_188.sdi
+mysql/performance_schema/user_variables_b_176.sdi
+mysql/performance_schema/users_144.sdi
+mysql/performance_schema/variables_by_thr_183.sdi
+mysql/performance_schema/variables_info_186.sdi
+mysql/sys/
+mysql/sys/sys_config.ibd
 
-sent 18 bytes  received 12 bytes  60.00 bytes/sec
-total size is 0  speedup is 0.00
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+sent 186,857,531 bytes  received 3,336 bytes  124,573,911.33 bytes/sec
+total size is 186,799,303  speedup is 1.00
 sending incremental file list
-rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+mysql/
+mysql/#ib_16384_0.dblwr
+mysql/#ib_16384_1.dblwr
+mysql/auto.cnf
+mysql/binlog.000001
+mysql/binlog.000002
+mysql/binlog.000003
+mysql/binlog.index
+mysql/ca-key.pem
+mysql/ca.pem
+mysql/client-cert.pem
+mysql/client-key.pem
+mysql/debian-5.7.flag
+mysql/ib_buffer_pool
+mysql/ibdata1
+mysql/mysql.ibd
+mysql/private_key.pem
+mysql/public_key.pem
+mysql/server-cert.pem
+mysql/server-key.pem
+mysql/undo_001
+mysql/undo_002
+mysql/#innodb_redo/
+mysql/#innodb_redo/#ib_redo10_tmp
+mysql/#innodb_redo/#ib_redo11_tmp
+mysql/#innodb_redo/#ib_redo12_tmp
+mysql/#innodb_redo/#ib_redo13_tmp
+mysql/#innodb_redo/#ib_redo14_tmp
+mysql/#innodb_redo/#ib_redo15_tmp
+mysql/#innodb_redo/#ib_redo16_tmp
+mysql/#innodb_redo/#ib_redo17_tmp
+mysql/#innodb_redo/#ib_redo18_tmp
+mysql/#innodb_redo/#ib_redo19_tmp
+mysql/#innodb_redo/#ib_redo20_tmp
+mysql/#innodb_redo/#ib_redo21_tmp
+mysql/#innodb_redo/#ib_redo22_tmp
+mysql/#innodb_redo/#ib_redo23_tmp
+mysql/#innodb_redo/#ib_redo24_tmp
+mysql/#innodb_redo/#ib_redo25_tmp
+mysql/#innodb_redo/#ib_redo26_tmp
+mysql/#innodb_redo/#ib_redo27_tmp
+mysql/#innodb_redo/#ib_redo28_tmp
+mysql/#innodb_redo/#ib_redo29_tmp
+mysql/#innodb_redo/#ib_redo30_tmp
+mysql/#innodb_redo/#ib_redo31_tmp
+mysql/#innodb_redo/#ib_redo32_tmp
+mysql/#innodb_redo/#ib_redo33_tmp
+mysql/#innodb_redo/#ib_redo34_tmp
+mysql/#innodb_redo/#ib_redo35_tmp
+mysql/#innodb_redo/#ib_redo36_tmp
+mysql/#innodb_redo/#ib_redo5
+mysql/#innodb_redo/#ib_redo6_tmp
+mysql/#innodb_redo/#ib_redo7_tmp
+mysql/#innodb_redo/#ib_redo8_tmp
+mysql/#innodb_redo/#ib_redo9_tmp
+mysql/#innodb_temp/
+mysql/benchmarks/
+mysql/benchmarks/Customer.ibd
+mysql/benchmarks/Orders.ibd
+mysql/mysql/
+mysql/mysql/general_log.CSM
+mysql/mysql/general_log.CSV
+mysql/mysql/general_log_213.sdi
+mysql/mysql/slow_log.CSM
+mysql/mysql/slow_log.CSV
+mysql/mysql/slow_log_214.sdi
+mysql/performance_schema/
+mysql/performance_schema/accounts_145.sdi
+mysql/performance_schema/binary_log_trans_189.sdi
+mysql/performance_schema/cond_instances_82.sdi
+mysql/performance_schema/data_lock_waits_161.sdi
+mysql/performance_schema/data_locks_160.sdi
+mysql/performance_schema/error_log_83.sdi
+mysql/performance_schema/events_errors_su_139.sdi
+mysql/performance_schema/events_errors_su_140.sdi
+mysql/performance_schema/events_errors_su_141.sdi
+mysql/performance_schema/events_errors_su_142.sdi
+mysql/performance_schema/events_errors_su_143.sdi
+mysql/performance_schema/events_stages_cu_111.sdi
+mysql/performance_schema/events_stages_hi_112.sdi
+mysql/performance_schema/events_stages_hi_113.sdi
+mysql/performance_schema/events_stages_su_114.sdi
+mysql/performance_schema/events_stages_su_115.sdi
+mysql/performance_schema/events_stages_su_116.sdi
+mysql/performance_schema/events_stages_su_117.sdi
+mysql/performance_schema/events_stages_su_118.sdi
+mysql/performance_schema/events_statement_119.sdi
+mysql/performance_schema/events_statement_120.sdi
+mysql/performance_schema/events_statement_121.sdi
+mysql/performance_schema/events_statement_122.sdi
+mysql/performance_schema/events_statement_123.sdi
+mysql/performance_schema/events_statement_124.sdi
+mysql/performance_schema/events_statement_125.sdi
+mysql/performance_schema/events_statement_126.sdi
+mysql/performance_schema/events_statement_127.sdi
+mysql/performance_schema/events_statement_128.sdi
+mysql/performance_schema/events_statement_129.sdi
+mysql/performance_schema/events_statement_130.sdi
+mysql/performance_schema/events_transacti_131.sdi
+mysql/performance_schema/events_transacti_132.sdi
+mysql/performance_schema/events_transacti_133.sdi
+mysql/performance_schema/events_transacti_134.sdi
+mysql/performance_schema/events_transacti_135.sdi
+mysql/performance_schema/events_transacti_136.sdi
+mysql/performance_schema/events_transacti_137.sdi
+mysql/performance_schema/events_transacti_138.sdi
+mysql/performance_schema/events_waits_cur_84.sdi
+mysql/performance_schema/events_waits_his_85.sdi
+mysql/performance_schema/events_waits_his_86.sdi
+mysql/performance_schema/events_waits_sum_87.sdi
+mysql/performance_schema/events_waits_sum_88.sdi
+mysql/performance_schema/events_waits_sum_89.sdi
+mysql/performance_schema/events_waits_sum_90.sdi
+mysql/performance_schema/events_waits_sum_91.sdi
+mysql/performance_schema/events_waits_sum_92.sdi
+mysql/performance_schema/file_instances_93.sdi
+mysql/performance_schema/file_summary_by__94.sdi
+mysql/performance_schema/file_summary_by__95.sdi
+mysql/performance_schema/global_status_181.sdi
+mysql/performance_schema/global_variables_184.sdi
+mysql/performance_schema/host_cache_96.sdi
+mysql/performance_schema/hosts_146.sdi
+mysql/performance_schema/keyring_componen_191.sdi
+mysql/performance_schema/keyring_keys_152.sdi
+mysql/performance_schema/log_status_174.sdi
+mysql/performance_schema/memory_summary_b_154.sdi
+mysql/performance_schema/memory_summary_b_155.sdi
+mysql/performance_schema/memory_summary_b_156.sdi
+mysql/performance_schema/memory_summary_b_157.sdi
+mysql/performance_schema/memory_summary_g_153.sdi
+mysql/performance_schema/metadata_locks_159.sdi
+mysql/performance_schema/mutex_instances_97.sdi
+mysql/performance_schema/objects_summary__98.sdi
+mysql/performance_schema/performance_time_99.sdi
+mysql/performance_schema/persisted_variab_187.sdi
+mysql/performance_schema/prepared_stateme_175.sdi
+mysql/performance_schema/processlist_100.sdi
+mysql/performance_schema/replication_appl_165.sdi
+mysql/performance_schema/replication_appl_166.sdi
+mysql/performance_schema/replication_appl_167.sdi
+mysql/performance_schema/replication_appl_168.sdi
+mysql/performance_schema/replication_appl_170.sdi
+mysql/performance_schema/replication_appl_171.sdi
+mysql/performance_schema/replication_asyn_172.sdi
+mysql/performance_schema/replication_asyn_173.sdi
+mysql/performance_schema/replication_conn_162.sdi
+mysql/performance_schema/replication_conn_164.sdi
+mysql/performance_schema/replication_grou_163.sdi
+mysql/performance_schema/replication_grou_169.sdi
+mysql/performance_schema/rwlock_instances_101.sdi
+mysql/performance_schema/session_account__151.sdi
+mysql/performance_schema/session_connect__150.sdi
+mysql/performance_schema/session_status_182.sdi
+mysql/performance_schema/session_variable_185.sdi
+mysql/performance_schema/setup_actors_102.sdi
+mysql/performance_schema/setup_consumers_103.sdi
+mysql/performance_schema/setup_instrument_104.sdi
+mysql/performance_schema/setup_objects_105.sdi
+mysql/performance_schema/setup_threads_106.sdi
+mysql/performance_schema/socket_instances_147.sdi
+mysql/performance_schema/socket_summary_b_148.sdi
+mysql/performance_schema/socket_summary_b_149.sdi
+mysql/performance_schema/status_by_accoun_177.sdi
+mysql/performance_schema/status_by_host_178.sdi
+mysql/performance_schema/status_by_thread_179.sdi
+mysql/performance_schema/status_by_user_180.sdi
+mysql/performance_schema/table_handles_158.sdi
+mysql/performance_schema/table_io_waits_s_107.sdi
+mysql/performance_schema/table_io_waits_s_108.sdi
+mysql/performance_schema/table_lock_waits_109.sdi
+mysql/performance_schema/threads_110.sdi
+mysql/performance_schema/tls_channel_stat_190.sdi
+mysql/performance_schema/user_defined_fun_188.sdi
+mysql/performance_schema/user_variables_b_176.sdi
+mysql/performance_schema/users_144.sdi
+mysql/performance_schema/variables_by_thr_183.sdi
+mysql/performance_schema/variables_info_186.sdi
+mysql/sys/
+mysql/sys/sys_config.ibd
 
-sent 18 bytes  received 12 bytes  60.00 bytes/sec
-total size is 0  speedup is 0.00
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
+sent 186,857,531 bytes  received 3,336 bytes  124,573,911.33 bytes/sec
+total size is 186,799,303  speedup is 1.00
 sending incremental file list
-rsync: link_stat "/var/lib/mysql" failed: No such file or directory (2)
+mysql/
+mysql/#ib_16384_0.dblwr
+mysql/#ib_16384_1.dblwr
+mysql/auto.cnf
+mysql/binlog.000001
+mysql/binlog.000002
+mysql/binlog.000003
+mysql/binlog.index
+mysql/ca-key.pem
+mysql/ca.pem
+mysql/client-cert.pem
+mysql/client-key.pem
+mysql/debian-5.7.flag
+mysql/ib_buffer_pool
+mysql/ibdata1
+mysql/mysql.ibd
+mysql/private_key.pem
+mysql/public_key.pem
+mysql/server-cert.pem
+mysql/server-key.pem
+mysql/undo_001
+mysql/undo_002
+mysql/#innodb_redo/
+mysql/#innodb_redo/#ib_redo10_tmp
+mysql/#innodb_redo/#ib_redo11_tmp
+mysql/#innodb_redo/#ib_redo12_tmp
+mysql/#innodb_redo/#ib_redo13_tmp
+mysql/#innodb_redo/#ib_redo14_tmp
+mysql/#innodb_redo/#ib_redo15_tmp
+mysql/#innodb_redo/#ib_redo16_tmp
+mysql/#innodb_redo/#ib_redo17_tmp
+mysql/#innodb_redo/#ib_redo18_tmp
+mysql/#innodb_redo/#ib_redo19_tmp
+mysql/#innodb_redo/#ib_redo20_tmp
+mysql/#innodb_redo/#ib_redo21_tmp
+mysql/#innodb_redo/#ib_redo22_tmp
+mysql/#innodb_redo/#ib_redo23_tmp
+mysql/#innodb_redo/#ib_redo24_tmp
+mysql/#innodb_redo/#ib_redo25_tmp
+mysql/#innodb_redo/#ib_redo26_tmp
+mysql/#innodb_redo/#ib_redo27_tmp
+mysql/#innodb_redo/#ib_redo28_tmp
+mysql/#innodb_redo/#ib_redo29_tmp
+mysql/#innodb_redo/#ib_redo30_tmp
+mysql/#innodb_redo/#ib_redo31_tmp
+mysql/#innodb_redo/#ib_redo32_tmp
+mysql/#innodb_redo/#ib_redo33_tmp
+mysql/#innodb_redo/#ib_redo34_tmp
+mysql/#innodb_redo/#ib_redo35_tmp
+mysql/#innodb_redo/#ib_redo36_tmp
+mysql/#innodb_redo/#ib_redo5
+mysql/#innodb_redo/#ib_redo6_tmp
+mysql/#innodb_redo/#ib_redo7_tmp
+mysql/#innodb_redo/#ib_redo8_tmp
+mysql/#innodb_redo/#ib_redo9_tmp
+mysql/#innodb_temp/
+mysql/benchmarks/
+mysql/benchmarks/Customer.ibd
+mysql/benchmarks/Orders.ibd
+mysql/mysql/
+mysql/mysql/general_log.CSM
+mysql/mysql/general_log.CSV
+mysql/mysql/general_log_213.sdi
+mysql/mysql/slow_log.CSM
+mysql/mysql/slow_log.CSV
+mysql/mysql/slow_log_214.sdi
+mysql/performance_schema/
+mysql/performance_schema/accounts_145.sdi
+mysql/performance_schema/binary_log_trans_189.sdi
+mysql/performance_schema/cond_instances_82.sdi
+mysql/performance_schema/data_lock_waits_161.sdi
+mysql/performance_schema/data_locks_160.sdi
+mysql/performance_schema/error_log_83.sdi
+mysql/performance_schema/events_errors_su_139.sdi
+mysql/performance_schema/events_errors_su_140.sdi
+mysql/performance_schema/events_errors_su_141.sdi
+mysql/performance_schema/events_errors_su_142.sdi
+mysql/performance_schema/events_errors_su_143.sdi
+mysql/performance_schema/events_stages_cu_111.sdi
+mysql/performance_schema/events_stages_hi_112.sdi
+mysql/performance_schema/events_stages_hi_113.sdi
+mysql/performance_schema/events_stages_su_114.sdi
+mysql/performance_schema/events_stages_su_115.sdi
+mysql/performance_schema/events_stages_su_116.sdi
+mysql/performance_schema/events_stages_su_117.sdi
+mysql/performance_schema/events_stages_su_118.sdi
+mysql/performance_schema/events_statement_119.sdi
+mysql/performance_schema/events_statement_120.sdi
+mysql/performance_schema/events_statement_121.sdi
+mysql/performance_schema/events_statement_122.sdi
+mysql/performance_schema/events_statement_123.sdi
+mysql/performance_schema/events_statement_124.sdi
+mysql/performance_schema/events_statement_125.sdi
+mysql/performance_schema/events_statement_126.sdi
+mysql/performance_schema/events_statement_127.sdi
+mysql/performance_schema/events_statement_128.sdi
+mysql/performance_schema/events_statement_129.sdi
+mysql/performance_schema/events_statement_130.sdi
+mysql/performance_schema/events_transacti_131.sdi
+mysql/performance_schema/events_transacti_132.sdi
+mysql/performance_schema/events_transacti_133.sdi
+mysql/performance_schema/events_transacti_134.sdi
+mysql/performance_schema/events_transacti_135.sdi
+mysql/performance_schema/events_transacti_136.sdi
+mysql/performance_schema/events_transacti_137.sdi
+mysql/performance_schema/events_transacti_138.sdi
+mysql/performance_schema/events_waits_cur_84.sdi
+mysql/performance_schema/events_waits_his_85.sdi
+mysql/performance_schema/events_waits_his_86.sdi
+mysql/performance_schema/events_waits_sum_87.sdi
+mysql/performance_schema/events_waits_sum_88.sdi
+mysql/performance_schema/events_waits_sum_89.sdi
+mysql/performance_schema/events_waits_sum_90.sdi
+mysql/performance_schema/events_waits_sum_91.sdi
+mysql/performance_schema/events_waits_sum_92.sdi
+mysql/performance_schema/file_instances_93.sdi
+mysql/performance_schema/file_summary_by__94.sdi
+mysql/performance_schema/file_summary_by__95.sdi
+mysql/performance_schema/global_status_181.sdi
+mysql/performance_schema/global_variables_184.sdi
+mysql/performance_schema/host_cache_96.sdi
+mysql/performance_schema/hosts_146.sdi
+mysql/performance_schema/keyring_componen_191.sdi
+mysql/performance_schema/keyring_keys_152.sdi
+mysql/performance_schema/log_status_174.sdi
+mysql/performance_schema/memory_summary_b_154.sdi
+mysql/performance_schema/memory_summary_b_155.sdi
+mysql/performance_schema/memory_summary_b_156.sdi
+mysql/performance_schema/memory_summary_b_157.sdi
+mysql/performance_schema/memory_summary_g_153.sdi
+mysql/performance_schema/metadata_locks_159.sdi
+mysql/performance_schema/mutex_instances_97.sdi
+mysql/performance_schema/objects_summary__98.sdi
+mysql/performance_schema/performance_time_99.sdi
+mysql/performance_schema/persisted_variab_187.sdi
+mysql/performance_schema/prepared_stateme_175.sdi
+mysql/performance_schema/processlist_100.sdi
+mysql/performance_schema/replication_appl_165.sdi
+mysql/performance_schema/replication_appl_166.sdi
+mysql/performance_schema/replication_appl_167.sdi
+mysql/performance_schema/replication_appl_168.sdi
+mysql/performance_schema/replication_appl_170.sdi
+mysql/performance_schema/replication_appl_171.sdi
+mysql/performance_schema/replication_asyn_172.sdi
+mysql/performance_schema/replication_asyn_173.sdi
+mysql/performance_schema/replication_conn_162.sdi
+mysql/performance_schema/replication_conn_164.sdi
+mysql/performance_schema/replication_grou_163.sdi
+mysql/performance_schema/replication_grou_169.sdi
+mysql/performance_schema/rwlock_instances_101.sdi
+mysql/performance_schema/session_account__151.sdi
+mysql/performance_schema/session_connect__150.sdi
+mysql/performance_schema/session_status_182.sdi
+mysql/performance_schema/session_variable_185.sdi
+mysql/performance_schema/setup_actors_102.sdi
+mysql/performance_schema/setup_consumers_103.sdi
+mysql/performance_schema/setup_instrument_104.sdi
+mysql/performance_schema/setup_objects_105.sdi
+mysql/performance_schema/setup_threads_106.sdi
+mysql/performance_schema/socket_instances_147.sdi
+mysql/performance_schema/socket_summary_b_148.sdi
+mysql/performance_schema/socket_summary_b_149.sdi
+mysql/performance_schema/status_by_accoun_177.sdi
+mysql/performance_schema/status_by_host_178.sdi
+mysql/performance_schema/status_by_thread_179.sdi
+mysql/performance_schema/status_by_user_180.sdi
+mysql/performance_schema/table_handles_158.sdi
+mysql/performance_schema/table_io_waits_s_107.sdi
+mysql/performance_schema/table_io_waits_s_108.sdi
+mysql/performance_schema/table_lock_waits_109.sdi
+mysql/performance_schema/threads_110.sdi
+mysql/performance_schema/tls_channel_stat_190.sdi
+mysql/performance_schema/user_defined_fun_188.sdi
+mysql/performance_schema/user_variables_b_176.sdi
+mysql/performance_schema/users_144.sdi
+mysql/performance_schema/variables_by_thr_183.sdi
+mysql/performance_schema/variables_info_186.sdi
+mysql/sys/
+mysql/sys/sys_config.ibd
 
-sent 18 bytes  received 12 bytes  60.00 bytes/sec
-total size is 0  speedup is 0.00
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1207) [sender=3.1.3]
-mv: cannot stat '/var/lib/mysql': No such file or directory
+sent 186,857,531 bytes  received 3,336 bytes  124,573,911.33 bytes/sec
+total size is 186,799,303  speedup is 1.00
 mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
 WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
@@ -91,237 +798,410 @@ loading tables: 3 for warehouse: 4
 
 loading tables: 4 for warehouse: 4
 
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Dropping tables '1'...
-Dropping tables '2'...
-Dropping tables '3'...
-Dropping tables '4'...
-mysql: [Warning] Using a password on the command line interface can be insecure.
-@@datadir
-/mnt/btrfs/mysql/
 mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Creating tables: 1
-
-Adding indexes 1 ... 
-
-Adding FK 1 ... 
-
-Creating tables: 2
-
-Adding indexes 2 ... 
-
-Adding FK 2 ... 
-
-Creating tables: 3
-
-Adding indexes 3 ... 
-
-Adding FK 3 ... 
-
-Creating tables: 4
-
-Adding indexes 4 ... 
-
-Adding FK 4 ... 
-
-Waiting on tables 30 sec
-
-loading tables: 1 for warehouse: 1
-
-loading tables: 2 for warehouse: 1
-
-loading tables: 3 for warehouse: 1
-
-loading tables: 4 for warehouse: 1
-
-loading tables: 1 for warehouse: 2
-
-loading tables: 2 for warehouse: 2
-
-loading tables: 3 for warehouse: 2
-
-loading tables: 4 for warehouse: 2
-
-loading tables: 1 for warehouse: 3
-
-loading tables: 2 for warehouse: 3
-
-loading tables: 3 for warehouse: 3
-
-loading tables: 4 for warehouse: 3
-
-loading tables: 1 for warehouse: 4
-
-loading tables: 2 for warehouse: 4
-
-loading tables: 3 for warehouse: 4
-
-loading tables: 4 for warehouse: 4
-
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Dropping tables '1'...
-Dropping tables '2'...
-Dropping tables '3'...
-Dropping tables '4'...
 mysql: [Warning] Using a password on the command line interface can be insecure.
-@@datadir
-/mnt/ext4/mysql/
+Dropping FK for CSV engine for table customer1...
 mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Creating tables: 1
-
-Adding indexes 1 ... 
-
-Adding FK 1 ... 
-
-Creating tables: 2
-
-Adding indexes 2 ... 
-
-Adding FK 2 ... 
-
-Creating tables: 3
-
-Adding indexes 3 ... 
-
-Adding FK 3 ... 
-
-Creating tables: 4
-
-Adding indexes 4 ... 
-
-Adding FK 4 ... 
-
-Waiting on tables 30 sec
-
-loading tables: 1 for warehouse: 1
-
-loading tables: 2 for warehouse: 1
-
-loading tables: 3 for warehouse: 1
-
-loading tables: 4 for warehouse: 1
-
-loading tables: 1 for warehouse: 2
-
-loading tables: 2 for warehouse: 2
-
-loading tables: 3 for warehouse: 2
-
-loading tables: 4 for warehouse: 2
-
-loading tables: 1 for warehouse: 3
-
-loading tables: 2 for warehouse: 3
-
-loading tables: 3 for warehouse: 3
-
-loading tables: 4 for warehouse: 3
-
-loading tables: 1 for warehouse: 4
-
-loading tables: 2 for warehouse: 4
-
-loading tables: 3 for warehouse: 4
-
-loading tables: 4 for warehouse: 4
-
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Dropping tables '1'...
-Dropping tables '2'...
-Dropping tables '3'...
-Dropping tables '4'...
-mysql: [Warning] Using a password on the command line interface can be insecure.
-@@datadir
-/mnt/zfs/mysql/
+Dropping FK for CSV engine for table customer2...
 mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Creating tables: 1
-
-Adding indexes 1 ... 
-
-Adding FK 1 ... 
-
-Creating tables: 2
-
-Adding indexes 2 ... 
-
-Adding FK 2 ... 
-
-Creating tables: 3
-
-Adding indexes 3 ... 
-
-Adding FK 3 ... 
-
-Creating tables: 4
-
-Adding indexes 4 ... 
-
-Adding FK 4 ... 
-
-Waiting on tables 30 sec
-
-loading tables: 1 for warehouse: 1
-
-loading tables: 2 for warehouse: 1
-
-loading tables: 3 for warehouse: 1
-
-loading tables: 4 for warehouse: 1
-
-loading tables: 1 for warehouse: 2
-
-loading tables: 2 for warehouse: 2
-
-loading tables: 3 for warehouse: 2
-
-loading tables: 4 for warehouse: 2
-
-loading tables: 1 for warehouse: 3
-
-loading tables: 2 for warehouse: 3
-
-loading tables: 3 for warehouse: 3
-
-loading tables: 4 for warehouse: 3
-
-loading tables: 1 for warehouse: 4
-
-loading tables: 2 for warehouse: 4
-
-loading tables: 3 for warehouse: 4
-
-loading tables: 4 for warehouse: 4
-
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
-sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
-
-Dropping tables '1'...
-Dropping tables '2'...
-Dropping tables '3'...
-Dropping tables '4'...
+Dropping FK for CSV engine for table customer3...
 mysql: [Warning] Using a password on the command line interface can be insecure.
-@@datadir
-/mnt/xfs/mysql/
-Script finished
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table customer4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table district1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table district2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table district3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table district4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table item1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table item2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table item3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table item4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table new_orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table new_orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table new_orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table new_orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table order_line1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table order_line2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table order_line3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table order_line4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table stock1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table stock2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table stock3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table stock4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table warehouse1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table warehouse2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table warehouse3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping FK for CSV engine for table warehouse4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table customer1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table customer2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table customer3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table customer4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table district1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table district2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table district3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table district4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'PRIMARY'; check that column/key exists
+Dropping PK for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'PRIMARY'; check that column/key exists
+Dropping PK for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'PRIMARY'; check that column/key exists
+Dropping PK for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'PRIMARY'; check that column/key exists
+Dropping PK for CSV engine for table item1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table item2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table item3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table item4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table new_orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table new_orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table new_orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table new_orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table order_line1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table order_line2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table order_line3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table order_line4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table stock1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table stock2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table stock3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table stock4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table warehouse1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table warehouse2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table warehouse3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping PK for CSV engine for table warehouse4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer1'; check that column/key exists
+Dropping INDEX for CSV engine for table customer1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer1'; check that column/key exists
+Dropping INDEX for CSV engine for table customer1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer1'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer2'; check that column/key exists
+Dropping INDEX for CSV engine for table customer2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer2'; check that column/key exists
+Dropping INDEX for CSV engine for table customer2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer2'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer3'; check that column/key exists
+Dropping INDEX for CSV engine for table customer3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer3'; check that column/key exists
+Dropping INDEX for CSV engine for table customer3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer3'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table customer4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer4'; check that column/key exists
+Dropping INDEX for CSV engine for table customer4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer4'; check that column/key exists
+Dropping INDEX for CSV engine for table customer4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_customer4'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_11'; check that column/key exists
+Dropping INDEX for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_11'; check that column/key exists
+Dropping INDEX for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_21'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_12'; check that column/key exists
+Dropping INDEX for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_12'; check that column/key exists
+Dropping INDEX for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_22'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_13'; check that column/key exists
+Dropping INDEX for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_13'; check that column/key exists
+Dropping INDEX for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_23'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_14'; check that column/key exists
+Dropping INDEX for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_14'; check that column/key exists
+Dropping INDEX for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table history4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_history_24'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_order_line_21'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_order_line_22'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_order_line_23'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table order_line4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'fkey_order_line_24'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders1'; check that column/key exists
+Dropping INDEX for CSV engine for table orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders1'; check that column/key exists
+Dropping INDEX for CSV engine for table orders1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders1'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders2'; check that column/key exists
+Dropping INDEX for CSV engine for table orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders2'; check that column/key exists
+Dropping INDEX for CSV engine for table orders2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders2'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders3'; check that column/key exists
+Dropping INDEX for CSV engine for table orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders3'; check that column/key exists
+Dropping INDEX for CSV engine for table orders3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders3'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders4'; check that column/key exists
+Dropping INDEX for CSV engine for table orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders4'; check that column/key exists
+Dropping INDEX for CSV engine for table orders4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1091 (42000) at line 1: Can't DROP 'idx_orders4'; check that column/key exists
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table stock1...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table stock2...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table stock3...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Dropping INDEX for CSV engine for table stock4...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
