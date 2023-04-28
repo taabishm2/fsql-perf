@@ -8,6 +8,10 @@ echo "Creating $logdir"
 rm -rf "$logdir"
 mkdir "$logdir"
 
+sleep 10
+
+echo "Startign MySQL setup"
+
 sudo systemctl start mysql
 mysql -u root -ppassword -e "SELECT @@datadir;"
 
