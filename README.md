@@ -1,18 +1,12 @@
 # fsql-perf
-MySQL engine performance analysis on Linux filesystems (ext4, btrfs, zfs, xfs)
+MySQL engine (InnoDB, MyISAM, CSV) performance analysis on Linux filesystems (ext4, btrfs, zfs, xfs)
 
-# Generating queries for the workload
-Example Command : python3 generate_crud_queries.py --queries 20 --C 25 --R 25 --U 25 --D 25
+## Setup
+* Requires 4 additional disks attached to the machine to execute - each filesystem is installed on a new disk
+* A Percona PMM server is also required (preferably on a different machine)
+* Running `setup.sh` installs MySQL, filesystems, sysbench, Percona client, and other utilities
+* To run the benchmark, run `perf.sh` after updating `nthreads`, `ntables`, `nscale`, `runtime`
 
-flags :
-
-queries : total number of queries
-
-C : percentage of create queries
-
-R : percentage of read queries
-
-U : percentage of update queries
-
-D : percentage of delete queries
-
+## Metrics
+* Running the benchmark generates sysbench files for each filesystem and engine. These can be parsed into a `csv` by running `clean.py`
+* The timestamps between which the benchmarks ran are stored in `FS_engine_timestamp.csv`. These can be used to retrieve stats from the PMM server
