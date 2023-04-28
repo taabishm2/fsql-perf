@@ -14,7 +14,7 @@ def read_and_convert_csv(file_path):
 
 def epoch_to_cdt(epoch_timestamp):
     utc_timezone = pytz.timezone("UTC")
-    cdt_timezone = pytz.timezone("US/Arizona")
+    cdt_timezone = pytz.timezone("America/Chicago")
     utc_dt = datetime.utcfromtimestamp(epoch_timestamp).replace(tzinfo=utc_timezone)
     cdt_dt = utc_dt.astimezone(cdt_timezone)
     return cdt_dt.strftime('%Y-%m-%d %H:%M:%S')
